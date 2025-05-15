@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EngMateriais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="material-header">
+      <h2>Sobre o Projeto</h2>
+    </div>
+
+    <div class="material-description">
+      <p>Este projeto foi desenvolvido pelos alunos do curso de Engenharia de Materiais da EEL-USP, como parte da disciplina de Python, sob a orientação do professor Luiz Eleno.</p>
+      
+      <p>Nosso objetivo é proporcionar uma visão mais próxima da área de Engenharia de Materiais, apresentando diferentes materiais, suas microestruturas e aplicações de forma interativa e didática.</p>
+      
+      <h3>Nossa Equipe</h3>
+      
+      <div class="team-grid">
+        <div class="team-member">
+          <h3>Ana Lívia Sampaio</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Francisco Rangel</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Ighor de Oliveira</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Katharine Souza</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Laís Monteiro</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Henrique Holanda</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Victoria Santos</h3>
+          <p>Engenharia de Materiais</p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="{{ url_for('index') }}" class="btn">Voltar para a página inicial</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

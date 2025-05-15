@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concreto Refratário - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EngMateriais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="material-detail">
+      <div class="material-header">
+        <h2>Concreto Refratário</h2>
+      </div>
+      
+      <img src="{{ url_for('static', filename='img/concreto.jpg') }}" alt="Microestrutura do Concreto Refratário" class="material-image">
+      
+      <div class="material-description">
+        <h3>O que é o Concreto Refratário?</h3>
+        <p>O concreto refratário é um tipo especial de concreto projetado para resistir a temperaturas extremamente altas, geralmente acima de 1000°C. Diferente do concreto convencional, ele é composto por agregados refratários, cimentos aluminosos e aditivos especiais que conferem resistência térmica excepcional.</p>
+        
+        <h3>Características Microestruturais</h3>
+        <p>Na microestrutura do concreto refratário, podemos observar uma matriz cerâmica densa com grãos de diferentes tamanhos e composições. A porosidade controlada é uma característica importante, pois permite a expansão térmica sem causar fissuras no material.</p>
+        
+        <div class="material-properties">
+          <div class="property-card">
+            <h4>Aplicações</h4>
+            <ul>
+              <li>Revestimento de fornos industriais</li>
+              <li>Indústria siderúrgica</li>
+              <li>Indústria de vidro e cerâmica</li>
+              <li>Usinas termoelétricas</li>
+              <li>Incineradores</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Propriedades</h4>
+            <ul>
+              <li>Resistência a temperaturas extremas (até 1800°C)</li>
+              <li>Resistência a choques térmicos</li>
+              <li>Baixa condutividade térmica</li>
+              <li>Resistência à abrasão</li>
+              <li>Estabilidade dimensional</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Composição Típica</h4>
+            <ul>
+              <li>Agregados refratários (alumina, sílica, magnésia)</li>
+              <li>Cimento aluminoso</li>
+              <li>Microssílica</li>
+              <li>Aditivos dispersantes</li>
+              <li>Fibras metálicas ou cerâmicas</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Curiosidades</h3>
+        <p>O concreto refratário é essencial para a indústria moderna, permitindo processos que operam em temperaturas extremas. Sem ele, muitos processos industriais seriam impossíveis ou teriam custos proibitivos devido à necessidade de substituição frequente de revestimentos.</p>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="{{ url_for('index') }}" class="btn">Voltar para a página inicial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

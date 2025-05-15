@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Conheça os Materiais - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Engenharia de Materiais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="hero">
+      <h1>Conheça os Materiais</h1>
+      <p>Bem-vindo ao nosso site de Engenharia de Materiais! Aqui você poderá identificar e aprender sobre diferentes materiais através de suas microestruturas e propriedades.</p>
+      <a href="#materiais" class="btn">Explorar Materiais</a>
+    </div>
+
+    <div id="materiais" class="materiais-grid">
+      <div class="material-card">
+        <img src="{{ url_for('static', filename='img/concreto.jpg') }}" alt="Concreto Refratário" class="material-img">
+        <div class="material-info">
+          <h3>Concreto Refratário</h3>
+          <p>Material resistente a altas temperaturas, utilizado em fornos e ambientes extremos.</p>
+          <a href="{{ url_for('concreto') }}" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="material-card">
+        <img src="{{ url_for('static', filename='img/aco_inox.jpg') }}" alt="Aço Inox" class="material-img">
+        <div class="material-info">
+          <h3>Aço Inox</h3>
+          <p>Liga metálica resistente à corrosão com ampla aplicação industrial e doméstica.</p>
+          <a href="{{ url_for('aco_inox') }}" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="material-card">
+        <img src="{{ url_for('static', filename='img/ferro_fundido.jpg') }}" alt="Ferro Fundido" class="material-img">
+        <div class="material-info">
+          <h3>Ferro Fundido</h3>
+          <p>Material versátil com excelente capacidade de fundição e resistência mecânica.</p>
+          <a href="{{ url_for('ferro_fundido') }}" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="material-card">
+        <img src="{{ url_for('static', filename='img/ferro_f22.jpg') }}" alt="Ferro F22" class="material-img">
+        <div class="material-info">
+          <h3>Ferro F22</h3>
+          <p>Liga especial utilizada em aplicações que exigem resistência a altas temperaturas e pressões.</p>
+          <a href="{{ url_for('ferro_f22') }}" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="material-card">
+        <img src="{{ url_for('static', filename='img/folha_cana.jpg') }}" alt="Folha de Cana de Açúcar" class="material-img">
+        <div class="material-info">
+          <h3>Folha de Cana de Açúcar</h3>
+          <p>Material orgânico com potencial para aplicações sustentáveis e bioderivados.</p>
+          <a href="{{ url_for('folha_cana') }}" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

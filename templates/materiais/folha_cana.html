@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folha de Cana de Açúcar - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EngMateriais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="material-detail">
+      <div class="material-header">
+        <h2>Folha de Cana de Açúcar</h2>
+      </div>
+      
+      <img src="{{ url_for('static', filename='img/folha_cana.jpg') }}" alt="Microestrutura da Folha de Cana de Açúcar" class="material-image">
+      
+      <div class="material-description">
+        <h3>O que é a Folha de Cana de Açúcar como Material?</h3>
+        <p>A folha de cana de açúcar é um material lignocelulósico composto principalmente por celulose, hemicelulose e lignina. Como biomassa, representa um recurso renovável com grande potencial para aplicações sustentáveis. No contexto da engenharia de materiais, as folhas de cana são estudadas tanto por sua microestrutura natural quanto por seu potencial como matéria-prima para diversos biomateriais.</p>
+        
+        <h3>Características Microestruturais</h3>
+        <p>A microestrutura da folha de cana de açúcar apresenta uma organização hierárquica complexa. Na escala microscópica, observa-se a presença de células do parênquima, feixes vasculares (xilema e floema), fibras de esclerênquima e uma camada epidérmica com células especializadas. As fibras são compostas por microfibrilas de celulose organizadas em camadas, envolvidas por uma matriz de hemicelulose e lignina, conferindo resistência mecânica à estrutura.</p>
+        
+        <div class="material-properties">
+          <div class="property-card">
+            <h4>Aplicações</h4>
+            <ul>
+              <li>Produção de biocompósitos</li>
+              <li>Matéria-prima para papel e celulose</li>
+              <li>Produção de bioetanol de segunda geração</li>
+              <li>Extração de nanocelulose</li>
+              <li>Produção de bioplásticos</li>
+              <li>Materiais de isolamento térmico e acústico</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Propriedades</h4>
+            <ul>
+              <li>Alta relação resistência/peso</li>
+              <li>Biodegradabilidade</li>
+              <li>Renovabilidade</li>
+              <li>Baixa condutividade térmica</li>
+              <li>Capacidade de absorção de umidade</li>
+              <li>Propriedades antimicrobianas naturais</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Composição Típica</h4>
+            <ul>
+              <li>Celulose: 35-45%</li>
+              <li>Hemicelulose: 25-35%</li>
+              <li>Lignina: 15-25%</li>
+              <li>Extrativos: 2-8%</li>
+              <li>Cinzas: 1-4%</li>
+              <li>Sílica: 0,5-2%</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Curiosidades</h3>
+        <p>O Brasil, como maior produtor mundial de cana de açúcar, gera anualmente milhões de toneladas de folhas e pontas de cana, tradicionalmente deixadas no campo ou queimadas. A valorização deste resíduo como matéria-prima para materiais avançados representa uma oportunidade de bioeconomia circular. Pesquisadores brasileiros têm desenvolvido tecnologias inovadoras para transformar as folhas de cana em nanomateriais, compósitos de alto desempenho e biocombustíveis, agregando valor a este subproduto agrícola e reduzindo impactos ambientais.</p>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="{{ url_for('index') }}" class="btn">Voltar para a página inicial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

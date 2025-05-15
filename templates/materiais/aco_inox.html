@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aço Inox - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EngMateriais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="material-detail">
+      <div class="material-header">
+        <h2>Aço Inoxidável</h2>
+      </div>
+      
+      <img src="{{ url_for('static', filename='img/aco_inox.jpg') }}" alt="Microestrutura do Aço Inoxidável" class="material-image">
+      
+      <div class="material-description">
+        <h3>O que é o Aço Inoxidável?</h3>
+        <p>O aço inoxidável é uma liga de ferro com no mínimo 10,5% de cromo, que forma uma camada passiva de óxido de cromo na superfície do material, conferindo resistência à corrosão. Outros elementos como níquel, molibdênio, titânio e nitrogênio também podem ser adicionados para melhorar propriedades específicas.</p>
+        
+        <h3>Características Microestruturais</h3>
+        <p>A microestrutura do aço inoxidável varia conforme sua classificação. Os aços austeníticos (série 300) apresentam grãos de austenita, enquanto os ferríticos (série 400) mostram grãos de ferrita. Os aços martensíticos exibem estrutura em agulhas característica da martensita, e os duplex combinam austenita e ferrita em proporções equilibradas.</p>
+        
+        <div class="material-properties">
+          <div class="property-card">
+            <h4>Aplicações</h4>
+            <ul>
+              <li>Utensílios de cozinha e cutelaria</li>
+              <li>Equipamentos médicos e cirúrgicos</li>
+              <li>Indústria alimentícia e farmacêutica</li>
+              <li>Construção civil e arquitetura</li>
+              <li>Indústria química e petroquímica</li>
+              <li>Indústria naval e aeroespacial</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Propriedades</h4>
+            <ul>
+              <li>Excelente resistência à corrosão</li>
+              <li>Boa resistência mecânica</li>
+              <li>Facilidade de limpeza e higienização</li>
+              <li>Aparência estética atraente</li>
+              <li>Boa soldabilidade (dependendo do tipo)</li>
+              <li>Resistência a altas e baixas temperaturas</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Tipos Principais</h4>
+            <ul>
+              <li>Austeníticos (304, 316, 321)</li>
+              <li>Ferríticos (430, 409, 444)</li>
+              <li>Martensíticos (410, 420, 440)</li>
+              <li>Duplex (2205, 2507)</li>
+              <li>Endurecíveis por precipitação (17-4PH)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Curiosidades</h3>
+        <p>O aço inoxidável foi descoberto no início do século XX pelo metalúrgico inglês Harry Brearley, que estava pesquisando ligas para canos de armas. Ele notou que uma de suas amostras com alto teor de cromo não enferrujava quando exposta ao ar e umidade. Hoje, existem mais de 150 tipos diferentes de aços inoxidáveis, cada um projetado para aplicações específicas.</p>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="{{ url_for('index') }}" class="btn">Voltar para a página inicial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

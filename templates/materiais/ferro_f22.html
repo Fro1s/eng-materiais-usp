@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferro F22 - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EngMateriais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="material-detail">
+      <div class="material-header">
+        <h2>Aço Liga F22 (2¼Cr-1Mo)</h2>
+      </div>
+      
+      <img src="{{ url_for('static', filename='img/ferro_f22.jpg') }}" alt="Microestrutura do Aço F22" class="material-image">
+      
+      <div class="material-description">
+        <h3>O que é o Aço F22?</h3>
+        <p>O aço F22 é um aço liga de cromo-molibdênio (2¼Cr-1Mo), classificado como aço ferrítico para serviço em altas temperaturas. Sua composição típica inclui 2,25% de cromo e 1% de molibdênio, além de carbono, manganês, silício, fósforo e enxofre em menores quantidades. É conhecido por sua excelente resistência à fluência e à oxidação em temperaturas elevadas.</p>
+        
+        <h3>Características Microestruturais</h3>
+        <p>A microestrutura do aço F22 geralmente consiste em uma matriz ferrítica com carbonetos dispersos. Após tratamento térmico adequado, pode apresentar uma estrutura bainítica ou uma mistura de bainita e ferrita, com carbonetos de cromo e molibdênio finamente dispersos. Estes carbonetos são responsáveis pelo endurecimento por precipitação e pela resistência à fluência em altas temperaturas.</p>
+        
+        <div class="material-properties">
+          <div class="property-card">
+            <h4>Aplicações</h4>
+            <ul>
+              <li>Vasos de pressão para refinarias</li>
+              <li>Reatores petroquímicos</li>
+              <li>Tubulações para serviço em alta temperatura</li>
+              <li>Equipamentos para hidrogenação</li>
+              <li>Trocadores de calor</li>
+              <li>Componentes de turbinas a vapor</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Propriedades</h4>
+            <ul>
+              <li>Excelente resistência à fluência</li>
+              <li>Boa resistência à oxidação até 550°C</li>
+              <li>Boa resistência à fragilização por hidrogênio</li>
+              <li>Boa soldabilidade (com pré-aquecimento)</li>
+              <li>Boa resistência mecânica em temperaturas elevadas</li>
+              <li>Boa resistência à fadiga térmica</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Composição Típica</h4>
+            <ul>
+              <li>Carbono: 0,05-0,15%</li>
+              <li>Cromo: 2,0-2,5%</li>
+              <li>Molibdênio: 0,9-1,1%</li>
+              <li>Manganês: 0,3-0,6%</li>
+              <li>Silício: 0,2-0,5%</li>
+              <li>Fósforo e Enxofre: máx. 0,025% cada</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Curiosidades</h3>
+        <p>O aço F22 foi desenvolvido especificamente para aplicações em alta temperatura e pressão na indústria petroquímica. É um dos materiais mais utilizados em equipamentos de hidrocraqueamento, onde o aço fica exposto a hidrogênio em alta pressão e temperatura. A adição de molibdênio confere resistência à fragilização por hidrogênio, enquanto o cromo melhora a resistência à oxidação. Apesar de ter sido desenvolvido há décadas, continua sendo um material de referência para aplicações críticas.</p>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="{{ url_for('index') }}" class="btn">Voltar para a página inicial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

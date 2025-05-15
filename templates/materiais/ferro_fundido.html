@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferro Fundido - Engenharia de Materiais</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">EngMateriais</div>
+      <div class="nav-links">
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="decoracao">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+  </div>
+
+  <div class="conteudo">
+    <div class="material-detail">
+      <div class="material-header">
+        <h2>Ferro Fundido</h2>
+      </div>
+      
+      <img src="{{ url_for('static', filename='img/ferro_fundido.jpg') }}" alt="Microestrutura do Ferro Fundido" class="material-image">
+      
+      <div class="material-description">
+        <h3>O que é o Ferro Fundido?</h3>
+        <p>O ferro fundido é uma liga de ferro-carbono com teor de carbono entre 2,1% e 4,3%, além de silício (1-3%) e outros elementos como manganês, fósforo e enxofre em menores quantidades. Sua principal característica é a excelente fundibilidade, permitindo a fabricação de peças com geometrias complexas.</p>
+        
+        <h3>Características Microestruturais</h3>
+        <p>A microestrutura do ferro fundido é caracterizada pela presença de carbono na forma de grafita ou cementita (Fe₃C). Dependendo da composição e do tratamento térmico, a grafita pode se apresentar em diferentes morfologias: lamelas (ferro fundido cinzento), nódulos (ferro fundido nodular), ou vermicular (ferro fundido vermicular). A matriz pode ser ferrítica, perlítica, austenítica ou martensítica.</p>
+        
+        <div class="material-properties">
+          <div class="property-card">
+            <h4>Aplicações</h4>
+            <ul>
+              <li>Blocos de motores e cabeçotes</li>
+              <li>Tubulações e conexões hidráulicas</li>
+              <li>Bases de máquinas-ferramentas</li>
+              <li>Discos e tambores de freio</li>
+              <li>Panelas e utensílios de cozinha</li>
+              <li>Componentes estruturais na construção civil</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Propriedades</h4>
+            <ul>
+              <li>Excelente fundibilidade</li>
+              <li>Boa resistência à compressão</li>
+              <li>Capacidade de amortecimento de vibrações</li>
+              <li>Boa resistência ao desgaste</li>
+              <li>Boa usinabilidade</li>
+              <li>Condutividade térmica variável (dependendo do tipo)</li>
+            </ul>
+          </div>
+          
+          <div class="property-card">
+            <h4>Tipos Principais</h4>
+            <ul>
+              <li>Ferro Fundido Cinzento (grafita em lamelas)</li>
+              <li>Ferro Fundido Nodular/Dúctil (grafita em nódulos)</li>
+              <li>Ferro Fundido Branco (carbono como cementita)</li>
+              <li>Ferro Fundido Maleável (grafita em rosetas)</li>
+              <li>Ferro Fundido Vermicular (grafita em forma de vermes)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Curiosidades</h3>
+        <p>O ferro fundido é um dos materiais metálicos mais antigos produzidos pelo homem, com evidências de sua produção datando de 600 a.C. na China. O ferro fundido nodular, desenvolvido em 1943, revolucionou a indústria ao combinar a fundibilidade do ferro fundido com propriedades mecânicas próximas às do aço. Apesar de ser considerado um material tradicional, novas variantes de ferros fundidos continuam sendo desenvolvidas para aplicações específicas.</p>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="{{ url_for('index') }}" class="btn">Voltar para a página inicial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
